@@ -1,0 +1,109 @@
+body.modal-open {
+    overflow: hidden;
+}
+#age-modal {
+    display: none; /* Oculto por defecto */
+}
+
+/* Estilos del Preloader */
+    #preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('https://www.transparenttextures.com/patterns/asfalt-dark.png'),rgba(255, 255, 255, 0.705); /* Verde cannabis */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+    }
+
+
+    /* 🔄 Animación de flotación */
+    @keyframes float {
+        from { transform: translateY(0); }
+        to { transform: translateY(-20px); }
+    }
+
+    /* 🎬 Animación de salida */
+    .fade-out {
+        animation: fadeOut 1s forwards;
+    }
+
+    @keyframes fadeOut {
+        to {
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+
+/* end Preloader */
+
+/* Contenedor del slider Swiper*/
+    .swiper-container {
+        width: 100%;
+        padding: 25px;
+        margin: 20px auto;
+        overflow: hidden;
+        position: relative;
+        border-radius: 10px;
+    }
+
+    /* Slides */
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #ddd;
+    }
+
+    /* Botones de navegación */
+    .swiper-button-prev, 
+    .swiper-button-next {
+        color: white;
+        padding: 15px;
+        border-radius: 50%;
+        transition: background 0.3s ease-in-out;
+    }
+
+    /* Paginación */
+    .swiper-pagination-bullet {
+        background: white;
+        opacity: 0.6;
+    }
+
+    .swiper-pagination-bullet-active {
+        background: #33135c;
+        opacity: 1;
+    }
+
+    /* Responsivo */
+    @media screen and (max-width: 768px) {
+        .swiper-container {
+            margin-top: 10rem;
+        }
+
+    /* Imágenes dentro del slider */
+        .swiper-slide img {
+            width: 100%;
+            height: 100%;
+        }
+
+    }
+
+    @media screen and (max-width: 480px) {
+    /* Imágenes dentro del slider */
+        .swiper-slide img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-button-prev, 
+        .swiper-button-next {
+            display: none; /* Ocultamos en móvil */
+        }
+    }
+/* end slider carrusel Swiper */
+
+/*  */
