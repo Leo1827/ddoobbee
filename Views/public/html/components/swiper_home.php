@@ -3,7 +3,7 @@
     <div class="swiper-container relative">
         <div class="swiper-wrapper">
             <!-- SLIDE 1 -->
-            <div class="swiper-slide flex flex-col md:flex-row items-center justify-center bg-gray-100 p-8 rounded-lg">
+            <div class="swiper-slide flex flex-col md:flex-row items-center justify-center p-8 rounded-lg">
                 <div class="flex flex-col items-center">
                     <img src="Views/public/images/product.png" alt="Ghost" class="w-60 md:w-96">
                     <div class="text-center mt-4">
@@ -34,7 +34,7 @@
             </div>
 
             <!-- SLIDE 2 -->
-            <div class="swiper-slide flex flex-col md:flex-row items-center justify-center bg-gray-100 p-8 rounded-lg">
+            <div class="swiper-slide flex flex-col md:flex-row items-center justify-center p-8 rounded-lg">
                 <div class="flex flex-col items-center">
                     <img src="Views/public/images/product1.png" alt="Ghost" class="w-60 md:w-96">
                     <div class="text-center mt-4">
@@ -54,7 +54,7 @@
             </div>
 
             <!-- SLIDE 3 -->
-            <div class="swiper-slide flex flex-col md:flex-row items-center justify-center bg-gray-100 p-8 rounded-lg">
+            <div class="swiper-slide flex flex-col md:flex-row items-center justify-center p-8 rounded-lg">
                 <div class="flex flex-col items-center">
                     <img src="Views/public/images/product2.png" alt="Ghost" class="w-60 md:w-96">
                     <div class="text-center mt-4">

@@ -2,7 +2,9 @@
 <?php include 'lang/en-es.php'; ?>
 <?php include 'lang/lang_page.php'; ?>
 <?php require_once __DIR__ . "/config/config.php";?>
-
+<?php
+$productos = include 'productos/productos.php';
+?>
 <!DOCTYPE html>
 <html lang="<?= $lang ?>">
 <head>
@@ -23,53 +25,67 @@
     <title>DDOOBBEE</title>
 
 </head>
-<body class="bg-[#f3f3f3] text-[#33135c] background_body">
+<body class="text-[#33135c]">
     <!-- Preloader -->
     <div id="preloader">
         <img src="https://i.gifer.com/5RTK.gif" alt="Cargando..." width="200">
     </div>
-
+    <!-- modal age 18 years old -->
+    <?php include 'Views/public/html/components/modalAge.php'; ?>
     <!-- nav and main -->
     <?php $page = 'products'; include __DIR__ . "/Views/public/html/components/navbar.php"; ?>
     <!-- Content -->
-    <section class="py-12 mt-32 px-6 max-w-7xl mx-auto">
-        <h2 class="text-4xl font-bold text-center mb-4">Nuestros Productos</h2>
-        <p class="text-lg text-center text-gray-600 mb-10">
-            Descubre nuestra exclusiva selección de papeles para fumar <span class="font-semibold">DDOOBBEE Papers</span>. Diseñados para los amantes del estilo y la calidad.
-        </p>
+    <section class="md:px-32 p-10 py-12 mt-32">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-10 text-gray-800">Productos</h2>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Producto 1 -->
-            <div class="bg-white shadow-lg rounded-2xl p-6 text-center transform hover:scale-105 transition duration-300">
-                <div class="h-52 bg-gray-200 rounded-lg flex items-center justify-center">
-                    <span class="text-gray-500">Imagen aquí</span>
-                </div>
-                <h3 class="text-xl font-semibold mt-4">DDOOBBEE Classic</h3>
-                <p class="text-gray-600 mt-2">Papel ultra fino para una combustión lenta y uniforme.</p>
-                <button class="mt-4 bg-[#33135c] text-white py-2 px-6 rounded-lg hover:bg-[#5a259a] transition">Ver más</button>
-            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
+                <?php
+                $productos = [
+                    ["id" => 1, "nombre" => "Chocolate", "imagen" => "Views/public/images/product_1/1.jpg"],
+                    ["id" => 2, "nombre" => "Fresa", "imagen" => "Views/public/images/product_2/1.jpg"],
+                    ["id" => 3, "nombre" => "Indubious Black", "imagen" => "Views/public/images/product_3/1.jpg"],
+                    ["id" => 4, "nombre" => "Bonkers Brown", "imagen" => "Views/public/images/product_4/1.jpg"],
+                    ["id" => 5, "nombre" => "Grinders", "imagen" => "Views/public/images/product_5/1.png"],
+                    ["id" => 5, "nombre" => "Bandejas", "imagen" => "Views/public/images/product_6/1.jpg"],
+                ];
 
-            <!-- Producto 2 -->
-            <div class="bg-white shadow-lg rounded-2xl p-6 text-center transform hover:scale-105 transition duration-300">
-                <div class="h-52 bg-gray-200 rounded-lg flex items-center justify-center">
-                    <span class="text-gray-500">Imagen aquí</span>
-                </div>
-                <h3 class="text-xl font-semibold mt-4">DDOOBBEE Gold</h3>
-                <p class="text-gray-600 mt-2">Edición premium con diseño elegante y materiales ecológicos.</p>
-                <button class="mt-4 bg-[#33135c] text-white py-2 px-6 rounded-lg hover:bg-[#5a259a] transition">Ver más</button>
-            </div>
+                foreach ($productos as $producto) :
+                ?>
+                <div class="relative group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <img src="<?php echo $producto['imagen']; ?>" alt="<?php echo $producto['nombre']; ?>" 
+                        class="w-full h-96 object-cover transform group-hover:scale-110 transition-all duration-500">
 
-            <!-- Producto 3 -->
-            <div class="bg-white shadow-lg rounded-2xl p-6 text-center transform hover:scale-105 transition duration-300">
-                <div class="h-52 bg-gray-200 rounded-lg flex items-center justify-center">
-                    <span class="text-gray-500">Imagen aquí</span>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80 group-hover:opacity-100 transition-all duration-500"></div>
+
+                    <div class="absolute bottom-5 left-5 right-5 text-white">
+                        <h3 class="text-2xl font-semibold drop-shadow-md"><?php echo $producto['nombre']; ?></h3>
+                    </div>
+                    
+                    <a href="product_single.php?id=<?= urlencode($producto['id']) ?>"
+                        class="absolute bottom-4 right-2 bg-green-600 text-white px-5 py-2 rounded-lg text-sm opacity-0 group-hover:opacity-100 transition-all duration-500 shadow-md hover:bg-green-700"
+                        >
+                        Más Información
+                    </a>
                 </div>
-                <h3 class="text-xl font-semibold mt-4">DDOOBBEE Organic</h3>
-                <p class="text-gray-600 mt-2">Papel 100% natural sin químicos añadidos, ideal para puristas.</p>
-                <button class="mt-4 bg-[#33135c] text-white py-2 px-6 rounded-lg hover:bg-[#5a259a] transition">Ver más</button>
+                <?php endforeach; ?>
             </div>
         </div>
     </section>
+    <!-- two content  -->
+
+    <script>
+        document.getElementById('next').addEventListener('click', function () {
+            document.getElementById('carousel').scrollBy({ left: 300, behavior: 'smooth' });
+        });
+
+        document.getElementById('prev').addEventListener('click', function () {
+            document.getElementById('carousel').scrollBy({ left: -300, behavior: 'smooth' });
+        });
+    </script>
+    
+    <!-- Footer -->
+    <?php include __DIR__ . "/Views/public/html/components/footer.php";?>
 
     <!-- Swiper JS antes de main.js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

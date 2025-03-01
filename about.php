@@ -23,7 +23,7 @@
     <title>DDOOBBEE</title>
 
 </head>
-<body class="bg-[#f3f3f3] text-[#33135c] background_body">
+<body class="text-[#33135c] background_body">
     <!-- Preloader -->
     <div id="preloader">
         <img src="https://i.gifer.com/5RTK.gif" alt="Cargando..." width="200">
@@ -64,7 +64,8 @@
             Conoce más
         </button>
     </section>
-
+    <!-- Footer -->
+    <?php include __DIR__ . "/Views/public/html/components/footer.php";?>
 
     <!-- Swiper JS antes de main.js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

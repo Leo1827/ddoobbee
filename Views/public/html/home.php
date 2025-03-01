@@ -23,7 +23,7 @@
     <title>DDOOBBEE</title>
 
 </head>
-<body class="bg-[#f3f3f3] text-[#33135c] background_body">
+<body class="text-[#33135c] background_body">
     <!-- Preloader -->
     <div id="preloader">
         <img src="https://i.gifer.com/5RTK.gif" alt="Cargando..." width="200">
@@ -34,11 +34,20 @@
     <?php $page = "home"; include 'components/navbar.php'; ?>
     <!-- Swiper home -->
     <?php include 'components/swiper_home.php'; ?>
+    <section class="relative h-32 bg-fixed bg-center bg-cover flex items-center justify-center" 
+        style="background-image: url('Views/public/images/parallax-background.jpg');">
+        <div class="bg-black bg-opacity-50 text-white text-4xl font-bold p-6 rounded-lg shadow-lg">
+            Descubre la experiencia DDOOBBEE
+        </div>
+    </section>
 
+    <!-- carrusel products content -->
+    <?php include 'carrusel_products.php'; ?>
+
+    <!-- Footer -->
+    <?php include 'components/footer.php'; ?>
     <!-- Swiper JS antes de main.js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="Views/public/js/main.js"></script>
-
-    
 </body>
 </html>

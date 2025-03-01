@@ -1,14 +1,21 @@
+<footer class="bg-[#33135c] text-white py-6">
+    <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+            <!-- Logo -->
+            <div class="flex items-center justify-center md:justify-start">
+                <a href="index.php" class="text-3xl font-extrabold tracking-wide hover:text-4xl mt-1">
+                    DDOOBBEE
+                </a>
+            </div>
 
+            <!-- Información -->
+            <div class="text-center">
+                <p class="text-sm">© 2025 DDOOBBEE. Todos los derechos reservados.</p>
+                <p class="text-xs">Pagina de prueba.</p>
+            </div>
 
-<nav class="md:px-32 fixed top-0 left-0 w-full z-50 bg-white">
-    <div class="container mx-auto flex justify-between items-center px-6 mt-2">
-        <a href="index.php" class="text-3xl font-extrabold tracking-wide hover:text-4xl mt-4">
-            DDOOBBEE
-        </a>
-
-        <div class="flex items-center space-x-6">
-            <!-- Íconos de redes sociales -->
-            <div class="hidden md:flex space-x-3">
+            <!-- Redes sociales -->
+            <div class="hidden md:flex space-x-3 md:justify-end">
                 <a href="https://www.facebook.com/" target="_blank" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-300 text-gray-600 hover:bg-gray-700 hover:text-white transition duration-300">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24">
                         <path d="M22,12A10,10,0,1,0,10,22V14H7v-2h3V9.5A3.5,3.5,0,0,1,13.5,6H17V8H13.5A1.5,1.5,0,0,0,12,9.5V12h4l-1,2H12v8A10,10,0,0,0,22,12Z"/>
@@ -21,20 +28,9 @@
                 </a>
             </div>
 
-            <!-- Selector de idioma -->
-            <form method="POST">
-                <select name="lang" onchange="this.form.submit()" 
-                    class="md:px-4 sm:px-0 text-sm py-2 text-white font-semibold rounded-full bg-black bg-opacity-50 border-2 border-purple-300 hover:bg-purple-900 transition-all duration-300 cursor-pointer">
-                    <option value="es" <?= $lang == 'es' ? 'selected' : '' ?>>🌿 Español</option>
-                    <option value="en" <?= $lang == 'en' ? 'selected' : '' ?>>🔥 English</option>
-                </select>
-            </form>
         </div>
-
-        <button id="menu-toggle" class="lg:hidden text-black text-3xl">
-            ☰
-        </button>
     </div>
+</footer>
 
-    <?php include 'menu.php'; ?>
-</nav>
+<!-- Agregar FontAwesome para los iconos -->
+<script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
