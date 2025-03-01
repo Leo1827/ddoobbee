@@ -64,6 +64,9 @@
             Conoce más
         </button>
     </section>
+
+    <!-- Separator -->
+    <?php include 'Views/public/html/components/separator.php'; ?>
     <!-- Footer -->
     <?php include __DIR__ . "/Views/public/html/components/footer.php";?>
 

@@ -1,4 +1,4 @@
-<footer class="bg-[#33135c] text-white py-6">
+<footer class="bg-[#ed563a] text-white py-6">
     <div class="container mx-auto px-6">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
             <!-- Logo -->

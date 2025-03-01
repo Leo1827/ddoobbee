@@ -34,15 +34,8 @@
     <?php $page = "home"; include 'components/navbar.php'; ?>
     <!-- Swiper home -->
     <?php include 'components/swiper_home.php'; ?>
-    <section class="relative h-32 bg-fixed bg-center bg-cover flex items-center justify-center" 
-        style="background-image: url('Views/public/images/parallax-background.jpg');">
-        <div class="bg-black bg-opacity-50 text-white text-4xl font-bold p-6 rounded-lg shadow-lg">
-            Descubre la experiencia DDOOBBEE
-        </div>
-    </section>
-
-    <!-- carrusel products content -->
-    <?php include 'carrusel_products.php'; ?>
+    <!-- Separator -->
+    <?php include 'components/separator.php'; ?>
 
     <!-- Footer -->
     <?php include 'components/footer.php'; ?>
