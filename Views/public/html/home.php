@@ -23,7 +23,7 @@
     <title>DDOOBBEE</title>
 
 </head>
-<body class="text-[#33135c] background_body">
+<body class="text-[#feb101] bg-[#f7e0c8]">
     <!-- Preloader -->
     <div id="preloader">
         <img src="https://i.gifer.com/5RTK.gif" alt="Cargando..." width="200">

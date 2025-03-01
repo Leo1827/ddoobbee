@@ -1,6 +1,4 @@
-
-
-<nav class="md:px-32 fixed top-0 left-0 w-full z-50 bg-white">
+<nav class="md:px-32 fixed top-0 left-0 w-full z-50 bg-[#f7e0c8] shadow border-b-2 border-[#f3533d]">
     <div class="container mx-auto flex justify-between items-center px-6 mt-2">
         <a href="index.php" class="text-3xl font-extrabold tracking-wide hover:text-4xl mt-4">
             DDOOBBEE
@@ -9,8 +7,9 @@
         <div class="flex items-center space-x-6">
             <!-- Íconos de redes sociales -->
             <div class="hidden md:flex space-x-3">
-                <a href="https://www.facebook.com/" target="_blank" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-300 text-gray-600 hover:bg-gray-700 hover:text-white transition duration-300">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                <a href="https://www.facebook.com/" target="_blank" 
+                    class="w-10 h-10 flex items-center justify-center rounded-full bg-[#fff] border-2 border-[#edb01a] text-gray-600 hover:bg-gray-700 hover:text-white transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current text-[#cb5840]" viewBox="0 0 24 24">
                         <path d="M22,12A10,10,0,1,0,10,22V14H7v-2h3V9.5A3.5,3.5,0,0,1,13.5,6H17V8H13.5A1.5,1.5,0,0,0,12,9.5V12h4l-1,2H12v8A10,10,0,0,0,22,12Z"/>
                     </svg>
                 </a>
@@ -34,7 +33,11 @@
         <button id="menu-toggle" class="lg:hidden text-black text-3xl">
             ☰
         </button>
+        
     </div>
+    <!-- Ilustracion encima del menú -->
+    <img src="Views/public/images/ilustraciones/1.png" alt="Decoración menú" 
+        class="absolute left-1/2 top-6 hidden lg:flex transform -translate-x-1/2 w-100 z-50 pointer-events-none">
 
     <?php include 'menu.php'; ?>
 </nav>
