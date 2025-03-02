@@ -85,7 +85,21 @@ body.modal-open {
         opacity: 1;
     }
 
-    /* Responsivo */
+    .error {
+        color: red;
+        font-size: 14px;
+        display: block; /* Asegura que se muestre en una nueva línea */
+        margin-top: 5px; /* Espaciado para que no esté pegado al input */
+    }
+
+    /*------------ Responsivo Section --------------- */
+    @media screen and (max-width: 1250px) {
+        .barras_responsive{
+            width: 150px;
+        }
+
+    }
+
     @media screen and (max-width: 768px) {
         .swiper-container {
             margin-top: 10rem;

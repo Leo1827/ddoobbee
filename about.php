@@ -70,8 +70,6 @@
     <!-- Footer -->
     <?php include __DIR__ . "/Views/public/html/components/footer.php";?>
 
-    <!-- Swiper JS antes de main.js -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="Views/public/js/main.js"></script>
 
     

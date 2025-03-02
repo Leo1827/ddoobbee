@@ -40,7 +40,7 @@
             <!-- Selector de idioma -->
             <form method="POST" class="bg-[#fff] pb-1 rounded-full mt-3 lg:mt-0">
                 <select name="lang" onchange="this.form.submit()" 
-                    class="md:px-4 text-[#cb5840] sm:px-0 text-sm py-2 ml-2 text-white font-semibold rounded-full bg-black bg-[#fff] border-2 border-[#ffac06] hover:bg-[#e994b9] hover:text-[#fff] transition-all duration-300 cursor-pointer">
+                    class="md:px-4 text-[#cb5840] sm:px-0 text-sm py-2 ml-2 font-semibold rounded-full bg-[#fff] border-2 border-[#ffac06] hover:bg-[#e994b9] hover:text-[#fff] transition-all duration-300 cursor-pointer">
                     <option value="es" <?= $lang == 'es' ? 'selected' : '' ?>>🌿 Español</option>
                     <option value="en" <?= $lang == 'en' ? 'selected' : '' ?>>🔥 English</option>
                 </select>
@@ -55,7 +55,7 @@
 
     <!-- Barras -->
     <img src="Views/public/images/ilustraciones/1.png" alt="barras" 
-        class="absolute left-1/2 top-6 hidden lg:flex transform -translate-x-1/2 w-100 z-50 pointer-events-none">
+        class="absolute barras_responsive left-1/2 top-6 hidden lg:flex transform -translate-x-1/2 w-100 z-50 pointer-events-none">
 
 
     <?php include 'menu.php'; ?>

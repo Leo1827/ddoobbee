@@ -7,7 +7,7 @@ $current_page = basename($_SERVER['PHP_SELF']);
 <!-- menu.php -->
 <div id="menu" class="hidden lg:flex justify-center items-center h-14 bg-[#f7e0c8]">
     <ul class="flex space-x-12 text-lg px-6 ">
-        <li class="bg-[#000] rounded border border-[#000] pb-2 pl-2 hover:text-black hover:bg-[#e495ae]">
+        <li class="bg-[#000] rounded border border-[#000] pb-2 pl-2 hover:bg-[#e495ae]">
             <a href="<?= BASE_URL ?>index.php" 
                class='px-4 rounded text-[#fff] bg-[#ed563a] py-2 border border-[#000] hover:bg-[#fff]
                 <?= ($page == 'home') 
@@ -17,30 +17,30 @@ $current_page = basename($_SERVER['PHP_SELF']);
                 <?= $texts[$lang]['main1'] ?>
             </a>
         </li>
-        <li class="bg-[#000] rounded border border-[#000] pb-2 pl-2 hover:text-black hover:bg-[#e495ae]">
+        <li class="bg-[#000] rounded border border-[#000] pb-2 pl-2 hover:bg-[#e495ae]">
             <a href="<?= BASE_URL ?>products.php" 
-                class="px-4 rounded text-[#fff] bg-[#ed563a] py-2 border border-[#000] hover:bg-[#fff]
+                class="px-4 rounded text-[#fff] py-2 border border-[#000] hover:bg-[#99bc5a]
                 <?= ($page == 'products') 
-                    ? 'bg-[#fff] text-[#000] text-black'
-                    : 'hover:text-[#ffb400] hover:bg-[#ed563a]'; ?>">
+                    ? 'bg-[#99bc5a] text-[#fff]'
+                    : 'hover:text-[#fff] bg-[#ed563a] hover:bg-[#99bc5a]'; ?>">
                 <?= $texts[$lang]['main2'] ?>
             </a>
         </li>
-        <li class="bg-[#000] rounded border border-[#000] pb-2 pl-2 hover:text-black hover:bg-[#e495ae]">
+        <li class="bg-[#000] rounded border border-[#000] pb-2 pl-2 hover:bg-[#e495ae]">
             <a href="<?= BASE_URL ?>about.php" 
-                class="px-4 rounded text-[#fff] bg-[#ed563a] py-2 border border-[#000] hover:bg-[#fff] 
+                class="px-4 rounded text-[#fff] py-2 border border-[#000] hover:bg-[#238eab] 
                 <?= ($page == 'about') 
-                ? 'bg-[#fff] text-[#000] text-black'
-                : 'hover:text-[#ffb400] hover:bg-[#ed563a]'; ?>">
+                ? 'bg-[#238eab] text-[#fff]'
+                : 'hover:text-[#fff] bg-[#ed563a] hover:bg-[#238eab]'; ?>">
                 <?= $texts[$lang]['main3'] ?>
             </a>
         </li>
         <li class="bg-[#000] rounded border border-[#000] pb-2 pl-2 hover:text-black hover:bg-[#e495ae]">
             <a href="<?= BASE_URL ?>contact.php" 
-                class="px-4 rounded text-[#fff] bg-[#ed563a] py-2 border border-[#000] hover:bg-[#fff] 
+                class="px-4 rounded text-[#fff] py-2 border border-[#000] hover:bg-[#57ac83] 
                 <?= ($page == 'contact') 
-                ? 'bg-[#fff] text-[#000] text-black'
-                : 'hover:text-[#ffb400] hover:bg-[#ed563a]'; ?>">
+                ? 'bg-[#57ac83] text-[#000]'
+                : 'hover:text-[#fff] bg-[#ed563a] hover:bg-[#57ac83]'; ?>">
                 <?= $texts[$lang]['main4'] ?>
             </a>
         </li>

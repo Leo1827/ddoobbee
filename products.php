@@ -72,7 +72,9 @@ $productos = include 'productos/productos.php';
             </div>
         </div>
     </section>
-    <!-- two content  -->
+
+    <!-- Separator -->
+    <?php include 'Views/public/html/components/separator.php'; ?>
 
     <script>
         document.getElementById('next').addEventListener('click', function () {

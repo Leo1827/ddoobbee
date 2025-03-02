@@ -72,6 +72,4 @@ $slides = [
     </div>
 </section>
 
-<!-- Scripts -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="Views/public/js/main.js"></script>
