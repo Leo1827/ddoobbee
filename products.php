@@ -3,7 +3,7 @@
 <?php include 'lang/lang_page.php'; ?>
 <?php require_once __DIR__ . "/config/config.php";?>
 <?php
-$productos = include 'productos/productos.php';
+    $productos = include 'VO/productos.php';
 ?>
 <!DOCTYPE html>
 <html lang="<?= $lang ?>">
@@ -62,7 +62,7 @@ $productos = include 'productos/productos.php';
                         ["id" => 9, "nombre" => "Filtro papel Blanco", "imagen" => "Views/public/images/product_8/1.png"],
                         ["id" => 10, "nombre" => "Filtro Chocolate", "imagen" => "Views/public/images/product_9/1.png"],
                         ["id" => 11, "nombre" => "Filtro papel crema", "imagen" => "Views/public/images/product_10/1.png"],
-                        ["id" => 11, "nombre" => "Accesorios", "imagen" => "Views/public/images/product_11/1.png"],
+                        ["id" => 12, "nombre" => "Accesorios", "imagen" => "Views/public/images/product_11/1.png"],
                     ];
 
                     foreach ($productos as $producto) :
@@ -80,7 +80,7 @@ $productos = include 'productos/productos.php';
                         </h3>
                     </div>
                     
-                    <a href="product_single.php?id= <?= urlencode($producto['id']) ?>"
+                    <a href="product_single.php?id=<?= urlencode($producto['id']) ?>"
                         class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#ca584e] text-white hover:text-[#000] px-5 py-2 rounded-lg text-sm opacity-0 group-hover:opacity-100 transition-all duration-500 shadow-md hover:bg-[#f7e0c8]"
                     >
                         Más Información
