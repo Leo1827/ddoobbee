@@ -32,11 +32,6 @@ class Conexion {
         }
     }
 
-    public function ejecutar_query($sql, $params = []) {
-        $stmt = $this->pdo->prepare($sql);
-        return $stmt->execute($params);
-    }
-
     public function ejecutarConsulta($sql, $parametros = []) {
         try {
             // Evita inyecciones
@@ -46,6 +41,7 @@ class Conexion {
             die("Error en la consulta: " . $e->getMessage());
         }
     }
+
     
 }
 ?>

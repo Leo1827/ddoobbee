@@ -23,8 +23,9 @@ class AuthController {
     }
 
     public function logout() {
-        session_destroy();
-        header("Location: index.php");
+        session_unset(); // Limpia todas las variables de sesión
+        session_destroy(); // Destruye la sesión
+        header("Location: index.php"); // Redirige a la página principal
         exit();
     }
 
