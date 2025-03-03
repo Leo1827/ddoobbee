@@ -8,6 +8,7 @@ body.modal-open {
     overflow: hidden;
 }
 
+/* --------------------------------- Home -----------------------------*/
 
 #age-modal {
     display: none; /* Oculto por defecto */
@@ -90,6 +91,20 @@ body.modal-open {
         font-size: 14px;
         display: block; /* Asegura que se muestre en una nueva línea */
         margin-top: 5px; /* Espaciado para que no esté pegado al input */
+    }
+
+    
+/* --------------------------------- Products -----------------------------*/
+    @keyframes psychedelicBg {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+    .psychedelic-bg {
+        background: linear-gradient(45deg, #fab002, #fc5339, #805baf, #e499b9);
+        background-size: 300% 300%;
+        animation: psychedelicBg 5s infinite linear;
     }
 
     /*------------ Responsivo Section --------------- */

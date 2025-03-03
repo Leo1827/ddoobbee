@@ -10,11 +10,11 @@
     define("ADMIN_FOTO_URL", "$protocol://$host$adminBase/Views/admin/images/");
 ?>
 <!-- btn movil -->
-<button id="menu-toggle" class="md:hidden text-[#fff] bg-gray-800 p-2 rounded absolute top-4 left-4 z-50">
+<button id="menu-toggle" class="md:hidden text-[#fff] bg-gray-800 p-2 rounded absolute top-4 left-4 z-20">
     ☰
 </button>
 
-<aside id="sidebar" class="bg-gray-800 text-white w-64 min-h-screen p-4 fixed md:relative z-32 transform -translate-x-full md:translate-x-0 transition-transform duration-300">
+<aside id="sidebar" class="bg-gray-800 text-white w-64 min-h-screen p-4 absolute  md:relative z-10 transform -translate-x-full md:translate-x-0 transition-transform duration-300">
     <div class="text-center mb-6 mt-8">
         <img src="<?= ADMIN_FOTO_URL ?>/logo.png" alt="Logo" class="w-52 mx-auto">
         <h2 class="text-lg font-semibold">Admin Panel</h2>

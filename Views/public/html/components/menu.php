@@ -19,10 +19,10 @@ $current_page = basename($_SERVER['PHP_SELF']);
         </li>
         <li class="bg-[#000] rounded border border-[#000] pb-2 pl-2 hover:bg-[#e495ae]">
             <a href="<?= BASE_URL ?>products.php" 
-                class="px-4 rounded text-[#fff] py-2 border border-[#000] hover:bg-[#99bc5a]
+                class="px-4 rounded text-[#fff] py-2 border border-[#000] hover:bg-[#7c5eac]
                 <?= ($page == 'products') 
-                    ? 'bg-[#99bc5a] text-[#fff]'
-                    : 'hover:text-[#fff] bg-[#ed563a] hover:bg-[#99bc5a]'; ?>">
+                    ? 'bg-[#7c5eac] text-[#fff]'
+                    : 'hover:text-[#fff] bg-[#ed563a] hover:bg-[#7c5eac]'; ?>">
                 <?= $texts[$lang]['main2'] ?>
             </a>
         </li>
